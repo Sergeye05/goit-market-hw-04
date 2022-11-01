@@ -150,8 +150,16 @@ body {
     justify-content: center;
 }
 .header-soc-item {
-    height: 10px;
+   height: 10px;
+    display:flex;
+    justify-content: center;
 }
+.email-soc-icon {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+}
+
 .header-link:hover {
     color: var(--accent-color);
 }
@@ -160,42 +168,54 @@ body {
     color: blueviolet;
 }
 
-.contact-email {
+.contact-email  {
     color: var(--primary-text-color);
     text-decoration: none;
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    display: flex;
-    align-items: baseline;
-  
+    display: inline-block;
+   
 }
-
-
-.contact-email:hover {
-    color: var(--accent-color);
-}
-
-.contact-email:focus {
-    color: blueviolet;
-}
-
-
 .contact-tel {
     color: var(--primary-text-color);
     text-decoration: none;
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    display: block;
+   
+}
+
+.tel-soc-icon {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+}
+.contact-email:hover  {
+    color: var(--accent-color);
+}
+.contact-email:hover .email-soc-icon {
+    fill: var(--accent-color);
+}
+.contact-email:focus {
+    color: blueviolet;
+}
+.contact-email:focus .email-soc-icon {
+    fill:blueviolet ;
 }
 
 .contact-tel:hover {
     color: var(--accent-color);
 }
+.contact-tel:hover .tel-soc-icon {
+    fill: var(--accent-color);
+}
 
 .contact-tel:focus {
     color: blueviolet;
+}
+.contact-tel:focus .tel-soc-icon {
+    fill: blueviolet;
 }
 
 .section-title {
@@ -213,6 +233,8 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    max-width: 1600px;
+    margin: 0 auto;
 }
 
 .hero-title {
@@ -276,16 +298,26 @@ body {
 }
 
 .view-link:hover {
-    border-color: #2196F3;
+    border-color:var(--accent-color);
 }
 
-.adv-view-icon:hover {
-    fill: #2196F3;
-}
 
+.adv-div {
+    width: 270px ;
+    height: 120px;
+    margin-bottom: 30px;
+    background: #F5F4FA;
+    display: flex;
+
+}
+.adv-icon {
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
 .section-advantage {
     padding-bottom: 0;
-    padding-top: 30px;
+    padding-top: 94px;
 }
 
 .feature-list {
@@ -394,15 +426,16 @@ body {
 }
 
 .team-soc-link:hover {
-    background-color: #2196F3;
+    background-color:var(--accent-color);
 }
 
 .team-soc-link:hover .team-soc-icon {
-    fill: #FFFFFF;
+    fill: var(--hero-title-color);
 }
 
 .team-soc-icon {
     fill: #AFB1B8;
+   
 }
 
 .test-soc-list {
@@ -415,7 +448,10 @@ body {
     width: calc((100% - 150px) /6);
     height: 90px;
 }
-
+.test-soc-icon {
+    width: 106px;
+    height: 60px;
+}
 .test-link {
     width: 100%;
     height: 100%;
@@ -428,13 +464,13 @@ body {
     justify-content: center;
 }
 
-.test-link:hover {
-    border-color: #2196F3;
-    ;
+.test-link:hover, :focus {
+    border-color: var(--accent-color);
+    
 }
 
 .test-link:hover .test-soc-icon {
-    fill: #2196F3;
+    fill: var(--accent-color);
 }
 
 .project-title {
@@ -571,14 +607,14 @@ body {
     justify-content: center;
 }
 .footer-soc-link:hover {
-    background-color: #2196F3;
+    background-color: var(--accent-color);
 }
 
 
 
 
 .footer-soc-icon {
-fill: white;
+fill: var(--hero-title-color);
 
 }
 
