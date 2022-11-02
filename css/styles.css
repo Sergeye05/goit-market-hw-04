@@ -158,15 +158,13 @@ body {
     width: 16px;
     height: 12px;
     margin-right: 10px;
+    fill: currentColor;
 }
 
-.header-link:hover {
+.header-link:hover, .header-link:focus {
     color: var(--accent-color);
 }
 
-.header-link:focus {
-    color: blueviolet;
-}
 
 .contact-email  {
     color: var(--primary-text-color);
@@ -174,7 +172,9 @@ body {
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    display: inline-block;
+    display: flex;
+    align-items: center;
+   
    
 }
 .contact-tel {
@@ -183,41 +183,21 @@ body {
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
-   
+    display: flex;
+    align-items: center;
 }
-
 .tel-soc-icon {
     width: 16px;
     height: 12px;
     margin-right: 10px;
+    fill: currentColor;
 }
-.contact-email:hover  {
+.contact-email:hover , .contact-email:focus {
     color: var(--accent-color);
 }
-.contact-email:hover .email-soc-icon {
-    fill: var(--accent-color);
-}
-.contact-email:focus {
-    color: blueviolet;
-}
-.contact-email:focus .email-soc-icon {
-    fill:blueviolet ;
-}
-
-.contact-tel:hover {
+.contact-tel:hover, .contact-tel:focus {
     color: var(--accent-color);
 }
-.contact-tel:hover .tel-soc-icon {
-    fill: var(--accent-color);
-}
-
-.contact-tel:focus {
-    color: blueviolet;
-}
-.contact-tel:focus .tel-soc-icon {
-    fill: blueviolet;
-}
-
 .section-title {
     color: var(--hero-title-color);
 }
@@ -253,7 +233,9 @@ body {
 .hero-button {
     background: var(--accent-color);
     color: var(--hero-title-color);
+    margin-right: auto;
     font-family: inherit;
+    font-size: 16px;
     min-width: 216px;
     height: 50px;
     text-align: center;
@@ -303,17 +285,19 @@ body {
 
 
 .adv-div {
-    width: 270px ;
     height: 120px;
     margin-bottom: 30px;
     background: #F5F4FA;
     display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 .adv-icon {
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
 }
 .section-advantage {
     padding-bottom: 0;
@@ -503,8 +487,7 @@ body {
     align-items: baseline;
 }
 .contact {
-    padding-right: 150px;
-    align-items: baseline;
+  margin-right: 70px;  
 }
 
 .footer-logo {
@@ -609,10 +592,6 @@ body {
 .footer-soc-link:hover {
     background-color: var(--accent-color);
 }
-
-
-
-
 .footer-soc-icon {
 fill: var(--hero-title-color);
 
@@ -650,10 +629,6 @@ fill: var(--hero-title-color);
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.button:hover,
-.button:focus {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
 
 .button {
     color: var(--section-title-color);
@@ -665,16 +640,14 @@ fill: var(--hero-title-color);
     border: none;
     padding: 6px 22px;
     border-radius: 4px;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.button:hover {
+.button:hover, .button:focus {
     color: var(--hero-title-color);
     background-color: var(--accent-color);
 }
 
-.button:focus {
-    color: blueviolet;
-}
 
 .portofolio.main {
     background: var(--hero-title-color);
